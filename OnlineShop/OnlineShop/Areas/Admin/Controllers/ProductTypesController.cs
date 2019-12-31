@@ -116,7 +116,7 @@ namespace OnlineShop.Areas.Admin.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Remove(productTypes);
+                _db.Remove(productType);
                 await _db.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
